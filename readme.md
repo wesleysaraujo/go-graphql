@@ -16,7 +16,8 @@ Os principais métodos responsáveis pelas consultas e mutations estão implemen
 `go run ./server.go`
 
 ### Mutations
-`mutation createCategory {
+```
+mutation createCategory {
   createCategory(input: {
     name: "Linux",
     description: "Cursos de Linux"
@@ -26,7 +27,9 @@ Os principais métodos responsáveis pelas consultas e mutations estão implemen
     description
   }
 }
+```
 
+```
 mutation createCourse {
   createCourse(input: {
     name: "Linux para Desenvolvedores",
@@ -38,7 +41,9 @@ mutation createCourse {
     description
   }
 }
+```
 
+```
 mutation createChapter {
   createChapter(input: {
     name: "Primeiros Passos",
@@ -47,10 +52,12 @@ mutation createChapter {
     id
     name
   }
-}`
+}
+```
 
 ### Query
-`query findCategories {
+```
+query findCategories {
   categories {
     id
     name
@@ -60,7 +67,9 @@ mutation createChapter {
     }
   }
 }
+```
 
+```
 query findCourses {
   courses {
     id
@@ -76,7 +85,9 @@ query findCourses {
     }
   }
 }
+```
 
+```
 query findChapters {
   chapters {
     id
@@ -86,5 +97,4 @@ query findChapters {
     }
   }
 }
-`
-
+```
