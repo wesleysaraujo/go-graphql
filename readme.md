@@ -6,7 +6,7 @@ Exemple de API GraphQL para cadastro e consulta de:
 * Courses
 * Chapters
 
-Esse exemplo utiliza o módulo (gqlgen)[https://gqlgen.com/] para gerar o scaffold com seus devidos modelos
+Esse exemplo utiliza o módulo [gqlgen](https://gqlgen.com/) para gerar o scaffold com seus devidos modelos
 
 ### Implementação dos principais métodos
 Os principais métodos responsáveis pelas consultas e mutations estão implementados em:
